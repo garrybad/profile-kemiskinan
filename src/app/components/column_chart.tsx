@@ -6,7 +6,7 @@ import am5themes_Animated from "@amcharts/amcharts5/themes/Animated";
 
 function ColumnChart() {
     useLayoutEffect(() => {
-        let root = am5.Root.new("chartdiv");
+        let root = am5.Root.new("column-chart");
 
         // Set themes
         // https://www.amcharts.com/docs/v5/concepts/themes/
@@ -254,7 +254,7 @@ function ColumnChart() {
     }, []);
 
   return (
-    <div id="chartdiv" style={{ width: "100%", height: "500px" }}></div>
+    <div id="column-chart" style={{ width: "100%", height: "500px" }}></div>
   )
 }
 
