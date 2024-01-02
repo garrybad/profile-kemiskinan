@@ -1,0 +1,36 @@
+export interface Data1{
+    daerah: string;
+    tahun: string;
+    jumlah: string;
+    persentase: string;
+}
+  
+export interface Data2{
+    pulau: string;
+    pp_perkotaan: number;
+    pp_perdesaan: number;
+    pp_total: number;
+    jp_perkotaan: number;
+    jp_perdesaan: number;
+    jp_total: number;
+}
+  
+export interface Data3{
+    provinsi: string;
+    kota_sep_22: string;
+    kota_mar_23: string;
+    desa_sep_22: string;
+    desa_mar_23: string;
+    total_sep_22: string;
+    total_mar_23: string;
+}
+
+export interface Data4{
+    provinsi: string;
+    kota_sep_22: number;
+    kota_mar_23: number;
+    desa_sep_22: number;
+    desa_mar_23: number;
+    total_sep_22: number;
+    total_mar_23: number;
+}
