@@ -137,7 +137,7 @@ function DataStatistik() {
     <div className='bg-neutral-50 p-10'>
       <div className='mb-4'>
         <div className={`${poppins.className} text-black font-bold text-2xl text-center`}>Halaman Data & Statistik</div>
-        <div className={`${poppins.className} font-normal text-base text-center mx-40`}>Melalui infografik, grafik, dan analisis mendalam, halaman ini memberikan gambaran komprehensif tentang distribusi pendapatan, akses pendidikan, layanan kesehatan, dan tantangan ekonomi lainnya yang dihadapi oleh individu dan komunitas yang terpinggirkan.</div>
+        <div className={`${poppins.className} font-normal text-base text-center mx-40 text-black`}>Melalui infografik, grafik, dan analisis mendalam, halaman ini memberikan gambaran komprehensif tentang distribusi pendapatan, akses pendidikan, layanan kesehatan, dan tantangan ekonomi lainnya yang dihadapi oleh individu dan komunitas yang terpinggirkan.</div>
       </div>
 
       <div className='grid grid-cols-2 gap-4 mb-4'>

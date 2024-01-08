@@ -1,4 +1,4 @@
-import { Data1, Data2, Data3, Data4, Data5, Data6 } from "../model/model";
+import { Data1, Data2, Data3, Data4, Data5, Data6, Member } from "../model/model";
 
 export const DATA_DUMMY1: Data1[] = [
   {
@@ -1114,3 +1114,30 @@ export const DATA_DUMMY6: Data6[] = [
     src: "https://images.unsplash.com/photo-1549983885-5c9eeb881f44?w=500&auto=format&fit=crop&q=60&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxzZWFyY2h8NTB8fHBvdmVydHl8ZW58MHx8MHx8fDA%3D",
   },
 ];
+
+export const DATA_MEMBER: Member[] = [
+  {
+    id: 1,
+    name: 'Garry',
+    role: 'Project Manager',
+    profile: 'https://i.imgur.com/mynHUSas.jpg'
+  },
+  {
+    id: 2,
+    name: 'Kevin',
+    role: 'Programmer',
+    profile: 'https://i.imgur.com/bE7W1jis.jpg'
+  },
+  {
+    id: 3,
+    name: 'Ajeng',
+    role: 'Desainer',
+    profile: 'https://i.imgur.com/MK3eW3As.jpg'
+  },
+  {
+    id: 4,
+    name: 'Fahmi',
+    role: 'Member',
+    profile: 'https://i.imgur.com/IOjWm71s.jpg'
+  },
+]

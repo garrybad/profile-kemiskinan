@@ -50,3 +50,10 @@ export interface Data6{
     imgId: string;
     src: string;
 }
+
+export interface Member{
+    id: number;
+    name: string;
+    role: string;
+    profile: string;
+}
