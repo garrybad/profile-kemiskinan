@@ -25,11 +25,11 @@ const Navbar = () => {
           <ul tabIndex={0} className={`${poppins.className} menu menu-sm dropdown-content mt-3 z-[1] p-2 shadow bg-base-100 rounded-box w-52`}>
             <li><Link href="/">Beranda</Link></li>
             <li><Link href="/data_statistik">Data & Statistik</Link></li>
-            <li><Link href="/member">Solusi</Link></li>
-            <li><Link href="/member">Berita</Link></li>
-            <li><Link href="/member">Donasi</Link></li>
-            <li><Link href="/member">Galeri</Link></li>
-            <li><Link href="/member">Tentang Kami</Link></li>
+            <li><Link href="/solusi_pemerintah">Solusi Pemerintah</Link></li>
+            <li><Link href="/berita">Berita</Link></li>
+            <li><Link href="/donasi">Donasi</Link></li>
+            <li><Link href="/galeri">Galeri</Link></li>
+            <li><Link href="/tentang_kami">Tentang Kami</Link></li>
           </ul>
         </div>
         <a className="btn btn-ghost text-xl text-black">PKDI</a>
@@ -38,11 +38,11 @@ const Navbar = () => {
         <ul className={`${poppins.className} menu menu-horizontal px-1 text-black`}>
           <li><Link href="/">Beranda</Link></li>
           <li><Link href="/data_statistik">Data & Statistik</Link></li>
-          <li><Link href="/member">Solusi</Link></li>
-          <li><Link href="/member">Berita</Link></li>
-          <li><Link href="/member">Donasi</Link></li>
-          <li><Link href="/member">Galeri</Link></li>
-          <li><Link href="/member">Tentang Kami</Link></li>
+          <li><Link href="/solusi_pemerintah">Solusi Pemerintah</Link></li>
+          <li><Link href="/berita">Berita</Link></li>
+          <li><Link href="/donasi">Donasi</Link></li>
+          <li><Link href="/galeri">Galeri</Link></li>
+          <li><Link href="/tentang_kami">Tentang Kami</Link></li>
         </ul>
       </div>
       <div className="navbar-end">

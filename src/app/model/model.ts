@@ -34,3 +34,19 @@ export interface Data4{
     total_sep_22: number;
     total_mar_23: number;
 }
+
+export interface Data5{
+    provinsi: string;
+    gk_kapita_sep_22: number;
+    jumlah_art_rt_sep_22: number;
+    gk_rt_sep_22: number;
+    gk_kapita_mar_23: number;
+    jumlah_art_rt_mar_23: number;
+    gk_rt_mar_23: number;
+}
+
+export interface Data6{
+    id: number;
+    imgId: string;
+    src: string;
+}

@@ -1,10 +1,10 @@
 import React from 'react'
 import dynamic from 'next/dynamic';
 import Table from '../components/table';
-import { Poppins } from 'next/font/google'
+import { Poppins } from 'next/font/google';
 import { ColDef, ColGroupDef } from 'ag-grid-community';
-import { Data1, Data2, Data3, Data4 } from '../model/model';
-import { DATA_DUMMY1, DATA_DUMMY2, DATA_DUMMY3, DATA_DUMMY4 } from '../dummy/dummy_data_statistik';
+import { Data1, Data2, Data3, Data4, Data5 } from '../model/model';
+import { DATA_DUMMY1, DATA_DUMMY2, DATA_DUMMY3, DATA_DUMMY4, DATA_DUMMY5 } from '../dummy/dummy_data_statistik';
 
 const ColumnChart = dynamic(() => import('../components/column_chart'), { ssr: false });
 const PieChart = dynamic(() => import('../components/pie_chart'), { ssr: false });
@@ -13,7 +13,6 @@ const poppins = Poppins({
   subsets: ['latin'],
   weight: ['200', '400', '700']
 })
-
 
 function DataStatistik() {
 
@@ -112,8 +111,35 @@ function DataStatistik() {
 
   let dataRow4: Data4[] = DATA_DUMMY4;
 
+  let dataCol5: (ColDef | ColGroupDef)[] = [
+    { field: 'provinsi' },
+    {
+      headerName: 'September 22',
+      children: [
+        { field: 'gk_kapita_sep_22', headerName: 'GK per Kapita' },
+        { field: 'jumlah_art_rt_sep_22', headerName: 'Rata-Rata Jumlah ART pada RT Miskin' },
+        { field: 'gk_rt_sep_22', headerName: 'GK per RT Miskin' },
+      ]
+    },
+    {
+      headerName: 'Maret 23',
+      children: [
+        { field: 'gk_kapita_mar_23', headerName: 'GK per Kapita' },
+        { field: 'jumlah_art_rt_mar_23', headerName: 'Rata-Rata Jumlah ART pada RT Miskin' },
+        { field: 'gk_rt_mar_23', headerName: 'GK per RT Miskin' },
+      ]
+    },
+  ]
+
+  let dataRow5: Data5[] = DATA_DUMMY5;
+
   return (
     <div className='bg-neutral-50 p-10'>
+      <div className='mb-4'>
+        <div className={`${poppins.className} text-black font-bold text-2xl text-center`}>Halaman Data & Statistik</div>
+        <div className={`${poppins.className} font-normal text-base text-center mx-40`}>Melalui infografik, grafik, dan analisis mendalam, halaman ini memberikan gambaran komprehensif tentang distribusi pendapatan, akses pendidikan, layanan kesehatan, dan tantangan ekonomi lainnya yang dihadapi oleh individu dan komunitas yang terpinggirkan.</div>
+      </div>
+
       <div className='grid grid-cols-2 gap-4 mb-4'>
         <div className="card w-full bg-neutral-50 shadow-xl rounded-lg">
           <div className="card-body">
@@ -151,10 +177,17 @@ function DataStatistik() {
         </div>
       </div>
 
-      <div className="card w-full bg-neutral-50 shadow-xl rounded-lg">
+      <div className="card w-full bg-neutral-50 shadow-xl rounded-lg mb-4">
         <div className="card-body">
           <h2 className={`${poppins.className} card-title font-normal text-black`}>Garis Kemiskinan per Kapita Menurut Provinsi dan Daerah, September 2022 dan Maret 2023</h2>
           <Table dataRow={dataRow4} dataCol={dataCol4} />
+        </div>
+      </div>
+
+      <div className="card w-full bg-neutral-50 shadow-xl rounded-lg">
+        <div className="card-body">
+          <h2 className={`${poppins.className} card-title font-normal text-black`}>Garis Kemiskinan per Rumah Tangga Menurut Provinsi dan Daerah, September 2022 dan Maret 2023</h2>
+          <Table dataRow={dataRow5} dataCol={dataCol5} />
         </div>
       </div>
     </div>

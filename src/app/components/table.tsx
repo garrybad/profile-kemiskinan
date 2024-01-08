@@ -21,10 +21,10 @@ import {
   GridReadyEvent,
   createGrid,
 } from 'ag-grid-community';
-import { Data1, Data2, Data3, Data4 } from '../model/model';
+import { Data1, Data2, Data3, Data4, Data5 } from '../model/model';
 
 export interface props {
-  dataRow: (Data1 | Data2 | Data3 | Data4)[]
+  dataRow: (Data1 | Data2 | Data3 | Data4 | Data5)[]
   dataCol: (ColDef | ColGroupDef)[]
   autoGroup?: ColDef
 }

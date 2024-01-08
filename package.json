@@ -13,11 +13,13 @@
     "ag-grid-community": "^31.0.1",
     "ag-grid-enterprise": "^31.0.1",
     "ag-grid-react": "^31.0.1",
+    "file-saver": "^2.0.5",
     "next": "14.0.4",
     "react": "^18",
     "react-dom": "^18"
   },
   "devDependencies": {
+    "@types/file-saver": "^2.0.7",
     "@types/node": "^20",
     "@types/react": "^18",
     "@types/react-dom": "^18",
