@@ -137,11 +137,11 @@ function DataStatistik() {
     <div className='bg-neutral-50 p-10'>
       <div className='mb-4'>
         <div className={`${poppins.className} text-black font-bold text-2xl text-center`}>Halaman Data & Statistik</div>
-        <div className={`${poppins.className} font-normal text-base text-center mx-40 text-black`}>Melalui infografik, grafik, dan analisis mendalam, halaman ini memberikan gambaran komprehensif tentang distribusi pendapatan, akses pendidikan, layanan kesehatan, dan tantangan ekonomi lainnya yang dihadapi oleh individu dan komunitas yang terpinggirkan.</div>
+        <div className={`${poppins.className} font-normal text-base text-center sm:mx-40 text-black`}>Melalui infografik, grafik, dan analisis mendalam, halaman ini memberikan gambaran komprehensif tentang distribusi pendapatan, akses pendidikan, layanan kesehatan, dan tantangan ekonomi lainnya yang dihadapi oleh individu dan komunitas yang terpinggirkan.</div>
       </div>
 
-      <div className='grid grid-cols-2 gap-4 mb-4'>
-        <div className="card w-full bg-neutral-50 shadow-xl rounded-lg">
+      <div className='sm:grid grid-cols-2 gap-4 mb-4'>
+        <div className="card w-full bg-neutral-50 shadow-xl rounded-lg mb-4 sm:m-0">
           <div className="card-body">
             <h2 className={`${poppins.className} card-title font-normal text-black`}>Jumlah dan Persentase Penduduk Miskin, September 2012 – Maret 2023</h2>
             <ColumnChart />

@@ -1,4 +1,4 @@
-import { Data1, Data2, Data3, Data4, Data5, Data6, Member } from "../model/model";
+import { Data1, Data2, Data3, Data4, Data5, Data6, Headlines, Member, OtherNews, PopularNews } from "../model/model";
 
 export const DATA_DUMMY1: Data1[] = [
   {
@@ -1139,5 +1139,164 @@ export const DATA_MEMBER: Member[] = [
     name: 'Fahmi',
     role: 'Member',
     profile: 'https://i.imgur.com/IOjWm71s.jpg'
+  },
+]
+
+export const DATA_NEWS_POPULAR: PopularNews[] = [
+  {
+    id: 1,
+    number: '01',
+    title: 'Istana Buka Suara Jokowi Bagi Bansos Dikepung Poster Prabowo-Gibran',
+    area: 'Nasional',
+  },
+  {
+    id: 2,
+    number: '02',
+    title: 'Istana Buka Suara Jokowi Bagi Bansos Dikepung Poster Prabowo-Gibran',
+    area: 'Nasional',
+  },
+  {
+    id: 3,
+    number: '03',
+    title: 'Istana Buka Suara Jokowi Bagi Bansos Dikepung Poster Prabowo-Gibran',
+    area: 'Nasional',
+  },
+  {
+    id: 4,
+    number: '04',
+    title: 'Istana Buka Suara Jokowi Bagi Bansos Dikepung Poster Prabowo-Gibran',
+    area: 'Nasional',
+  },
+  {
+    id: 5,
+    number: '05',
+    title: 'Istana Buka Suara Jokowi Bagi Bansos Dikepung Poster Prabowo-Gibran',
+    area: 'Nasional',
+  },
+  {
+    id: 6,
+    number: '06',
+    title: 'Istana Buka Suara Jokowi Bagi Bansos Dikepung Poster Prabowo-Gibran',
+    area: 'Nasional',
+  },
+  {
+    id: 7,
+    number: '07',
+    title: 'Istana Buka Suara Jokowi Bagi Bansos Dikepung Poster Prabowo-Gibran',
+    area: 'Nasional',
+  },
+  {
+    id: 8,
+    number: '08',
+    title: 'Istana Buka Suara Jokowi Bagi Bansos Dikepung Poster Prabowo-Gibran',
+    area: 'Nasional',
+  },
+  {
+    id: 9,
+    number: '09',
+    title: 'Istana Buka Suara Jokowi Bagi Bansos Dikepung Poster Prabowo-Gibran',
+    area: 'Nasional',
+  },
+  {
+    id: 10,
+    number: '10',
+    title: 'Istana Buka Suara Jokowi Bagi Bansos Dikepung Poster Prabowo-Gibran',
+    area: 'Nasional',
+  },
+]
+
+export const DATA_HEADLINES: Headlines[] = [
+  {
+    id: 1,
+    img: 'https://images.unsplash.com/photo-1542367787-4baf35f3037d?w=500&auto=format&fit=crop&q=60&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxzZWFyY2h8MzB8fHBvdmVydHl8ZW58MHx8MHx8fDA%3D',
+    title: 'Rumah Super Mewah Ustaz Solmed, Ada Pom Bensin, Gym, dan Mini Sirkuit',
+    area: 'Nasional',
+  },
+  {
+    id: 2,
+    img: 'https://images.unsplash.com/photo-1600791582575-eb24559a3a5c?w=500&auto=format&fit=crop&q=60&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxzZWFyY2h8MzF8fHBvdmVydHl8ZW58MHx8MHx8fDA%3D',
+    title: 'Rumah Super Mewah Ustaz Solmed, Ada Pom Bensin, Gym, dan Mini Sirkuit',
+    area: 'Nasional',
+  },
+  {
+    id: 3,
+    img: 'https://images.unsplash.com/photo-1498876901188-b33aec70ea5d?w=500&auto=format&fit=crop&q=60&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxzZWFyY2h8Mzl8fHBvdmVydHl8ZW58MHx8MHx8fDA%3D',
+    title: 'Rumah Super Mewah Ustaz Solmed, Ada Pom Bensin, Gym, dan Mini Sirkuit',
+    area: 'Nasional',
+  },
+  {
+    id: 4,
+    img: 'https://images.unsplash.com/photo-1613673718268-8c2744a1b730?w=500&auto=format&fit=crop&q=60&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxzZWFyY2h8Mzh8fHBvdmVydHl8ZW58MHx8MHx8fDA%3D',
+    title: 'Rumah Super Mewah Ustaz Solmed, Ada Pom Bensin, Gym, dan Mini Sirkuit',
+    area: 'Nasional',
+  },
+  {
+    id: 5,
+    img: 'https://images.unsplash.com/photo-1504159506876-f8338247a14a?w=500&auto=format&fit=crop&q=60&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxzZWFyY2h8NDN8fHBvdmVydHl8ZW58MHx8MHx8fDA%3D',
+    title: 'Rumah Super Mewah Ustaz Solmed, Ada Pom Bensin, Gym, dan Mini Sirkuit',
+    area: 'Nasional',
+  },
+  {
+    id: 6,
+    img: 'https://images.unsplash.com/photo-1459183885421-5cc683b8dbba?w=500&auto=format&fit=crop&q=60&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxzZWFyY2h8NDR8fHBvdmVydHl8ZW58MHx8MHx8fDA%3D',
+    title: 'Rumah Super Mewah Ustaz Solmed, Ada Pom Bensin, Gym, dan Mini Sirkuit',
+    area: 'Nasional',
+  },
+]
+
+export const DATA_OTHER_NEWS: OtherNews[] = [
+  {
+    id: 1,
+    img: 'https://images.unsplash.com/photo-1494537604714-7975224eea63?w=500&auto=format&fit=crop&q=60&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxzZWFyY2h8NDJ8fHBvdmVydHl8ZW58MHx8MHx8fDA%3D',
+    title: 'Rumah Super Mewah Ustaz Solmed, Ada Pom Bensin, Gym, dan Mini Sirkuit',
+    area: 'Nasional',
+  },
+  {
+    id: 2,
+    img: 'https://images.unsplash.com/photo-1549983885-5c9eeb881f44?w=500&auto=format&fit=crop&q=60&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxzZWFyY2h8NTB8fHBvdmVydHl8ZW58MHx8MHx8fDA%3D',
+    title: 'Rumah Super Mewah Ustaz Solmed, Ada Pom Bensin, Gym, dan Mini Sirkuit',
+    area: 'Nasional',
+  },
+  {
+    id: 3,
+    img: 'https://images.unsplash.com/photo-1548472730-471d75f20ca1?w=500&auto=format&fit=crop&q=60&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxzZWFyY2h8NTV8fHBvdmVydHl8ZW58MHx8MHx8fDA%3D',
+    title: 'Rumah Super Mewah Ustaz Solmed, Ada Pom Bensin, Gym, dan Mini Sirkuit',
+    area: 'Nasional',
+  },
+  {
+    id: 4,
+    img: 'https://images.unsplash.com/photo-1573288810105-cf416af9186d?w=500&auto=format&fit=crop&q=60&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxzZWFyY2h8NTR8fHBvdmVydHl8ZW58MHx8MHx8fDA%3D',
+    title: 'Rumah Super Mewah Ustaz Solmed, Ada Pom Bensin, Gym, dan Mini Sirkuit',
+    area: 'Nasional',
+  },
+  {
+    id: 5,
+    img: 'https://images.unsplash.com/photo-1473594659356-a404044aa2c2?w=500&auto=format&fit=crop&q=60&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxzZWFyY2h8Njd8fHBvdmVydHl8ZW58MHx8MHx8fDA%3D',
+    title: 'Rumah Super Mewah Ustaz Solmed, Ada Pom Bensin, Gym, dan Mini Sirkuit',
+    area: 'Nasional',
+  },
+  {
+    id: 6,
+    img: 'https://images.unsplash.com/photo-1497375638960-ca368c7231e4?w=500&auto=format&fit=crop&q=60&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxzZWFyY2h8Njh8fHBvdmVydHl8ZW58MHx8MHx8fDA%3D',
+    title: 'Rumah Super Mewah Ustaz Solmed, Ada Pom Bensin, Gym, dan Mini Sirkuit',
+    area: 'Nasional',
+  },
+  {
+    id: 7,
+    img: 'https://images.unsplash.com/photo-1567001766755-3a3775614445?w=500&auto=format&fit=crop&q=60&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxzZWFyY2h8NzF8fHBvdmVydHl8ZW58MHx8MHx8fDA%3D',
+    title: 'Rumah Super Mewah Ustaz Solmed, Ada Pom Bensin, Gym, dan Mini Sirkuit',
+    area: 'Nasional',
+  },
+  {
+    id: 8,
+    img: 'https://images.unsplash.com/photo-1532372722026-28ddb1b48daf?w=500&auto=format&fit=crop&q=60&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxzZWFyY2h8Nzl8fHBvdmVydHl8ZW58MHx8MHx8fDA%3D',
+    title: 'Rumah Super Mewah Ustaz Solmed, Ada Pom Bensin, Gym, dan Mini Sirkuit',
+    area: 'Nasional',
+  },
+  {
+    id: 9,
+    img: 'https://images.unsplash.com/photo-1527348696784-c3ff7c1453f9?w=500&auto=format&fit=crop&q=60&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxzZWFyY2h8ODZ8fHBvdmVydHl8ZW58MHx8MHx8fDA%3D',
+    title: 'Rumah Super Mewah Ustaz Solmed, Ada Pom Bensin, Gym, dan Mini Sirkuit',
+    area: 'Nasional',
   },
 ]

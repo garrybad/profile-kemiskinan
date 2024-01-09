@@ -18,13 +18,13 @@ function Galeri() {
         <div className='bg-neutral-50 p-10'>
             <div className='mb-4'>
                 <div className={`${poppins.className} text-black font-bold text-2xl text-center`}>Halaman Galeri</div>
-                <div className={`${poppins.className} font-normal text-base text-center mx-40 text-black`}>Galeri ini bukan sekadar kumpulan gambar, melainkan jendela empati untuk melihat dunia dari perspektif yang mungkin jarang terjamah. Melalui setiap gambar, kami berusaha menyampaikan pesan tentang keberanian, tekad, dan keindahan yang dapat ditemukan di tengah-tengah kesulitan.</div>
+                <div className={`${poppins.className} font-normal text-base text-center sm:mx-40 text-black`}>Galeri ini bukan sekadar kumpulan gambar, melainkan jendela empati untuk melihat dunia dari perspektif yang mungkin jarang terjamah. Melalui setiap gambar, kami berusaha menyampaikan pesan tentang keberanian, tekad, dan keindahan yang dapat ditemukan di tengah-tengah kesulitan.</div>
             </div>
 
             <div className='sm:grid grid-cols-4 gap-4'>
                 {dataGallery.map((x) => {
                     return (
-                        <div key={x.id}>
+                        <div key={x.id} className='mb-4 sm:m-0'>
                             <Image className="w-full h-[30vh] object-cover cursor-zoom-in" onClick={() => {
                                 if (document) {
                                     (document.getElementById(x.imgId) as HTMLFormElement).showModal();

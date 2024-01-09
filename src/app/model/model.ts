@@ -57,3 +57,24 @@ export interface Member{
     role: string;
     profile: string;
 }
+
+export interface PopularNews{
+    id: number;
+    number: string;
+    title: string;
+    area: string;
+}
+
+export interface Headlines{
+    id: number;
+    img: string;
+    title: string;
+    area: string;
+}
+
+export interface OtherNews{
+    id: number;
+    img: string;
+    title: string;
+    area: string;
+}
