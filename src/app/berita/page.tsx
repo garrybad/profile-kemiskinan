@@ -29,9 +29,9 @@ function Berita() {
             </div>
             <div className={`${poppins.className} text-black font-bold text-2xl mb-2`}>Atikoh Pastikan Ganjar-Mahfud Md Berantas Kemiskinan dan Stabilkan Harga Pangan</div>
             <div className={`${poppins.className} text-black`}>
-              "Nah, apa program Ganjar-Mahfud menurunkan kemiskinan? Pertama kalau kita bicara kemiskinan, penanggulangan
+            &quot;Nah, apa program Ganjar-Mahfud menurunkan kemiskinan? Pertama kalau kita bicara kemiskinan, penanggulangan
               kemiskinan yang harus diselesaikan dari akar ialah pendidikan. Wajib belajar 12 tahun. Ketika ada wajib di sini, berarti
-              UU harus berpihak bahwa pendidikan dari SD sampai SMA gratis," ungkap dia.
+              UU harus berpihak bahwa pendidikan dari SD sampai SMA gratis,&quot; ungkap dia.
             </div>
           </div>
           <div className='col-span-4 pt-4 pr-4 pb-4' style={{ height: 'inherit' }}>
