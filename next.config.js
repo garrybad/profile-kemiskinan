@@ -13,6 +13,21 @@ const nextConfig = {
                 hostname: 'i.imgur.com',
                 pathname: '**'
             },
+            {
+                protocol: 'https',
+                hostname: 'kitabisa.com',
+                pathname: '**'
+            },
+            {
+                protocol: 'https',
+                hostname: 'asset.ayobantu.com',
+                pathname: '**'
+            },
+            {
+                protocol: 'https',
+                hostname: 'kitabisa.com',
+                pathname: '**'
+            },
         ]
     }
 }

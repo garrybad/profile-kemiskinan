@@ -1,4 +1,4 @@
-import { Data1, Data2, Data3, Data4, Data5, Data6, Headlines, Member, OtherNews, PopularNews } from "../model/model";
+import { Data1, Data2, Data3, Data4, Data5, Data6, GovernmentSolution, Headlines, Member, OtherNews, PopularNews, RecomendDonations } from "../model/model";
 
 export const DATA_DUMMY1: Data1[] = [
   {
@@ -1298,5 +1298,83 @@ export const DATA_OTHER_NEWS: OtherNews[] = [
     img: 'https://images.unsplash.com/photo-1527348696784-c3ff7c1453f9?w=500&auto=format&fit=crop&q=60&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxzZWFyY2h8ODZ8fHBvdmVydHl8ZW58MHx8MHx8fDA%3D',
     title: 'Rumah Super Mewah Ustaz Solmed, Ada Pom Bensin, Gym, dan Mini Sirkuit',
     area: 'Nasional',
+  },
+]
+
+export const DATA_SOLUTION: GovernmentSolution[] = [
+  {
+    id: 1,
+    title: 'Pendidikan Inklusif',
+    description: 'Meningkatkan akses dan kualitas pendidikan untuk semua, dengan fokus pada anak-anak dari keluarga miskin. Program beasiswa, sekolah gratis, dan pelatihan keterampilan dapat membantu meningkatkan kemampuan masyarakat untuk bersaing di pasar kerja.',
+  },
+  {
+    id: 2,
+    title: 'Pengembangan Keterampilan dan Pelatihan',
+    description: 'Menyediakan pelatihan keterampilan dan pendidikan teknis kepada masyarakat agar mereka memiliki keterampilan yang sesuai dengan tuntutan pasar kerja. Ini dapat membantu memperluas peluang pekerjaan dan penghasilan.',
+  },
+  {
+    id: 3,
+    title: 'Pemberdayaan Wanita',
+    description: 'Memberikan kesempatan yang setara untuk perempuan di berbagai bidang, termasuk pendidikan dan pekerjaan. Wanita yang didukung memiliki potensi besar untuk meningkatkan kesejahteraan keluarga dan masyarakat.',
+  },
+  {
+    id: 4,
+    title: 'Akses ke Layanan Kesehatan',
+    description: 'Meningkatkan akses ke layanan kesehatan yang terjangkau dan berkualitas, dengan fokus pada pencegahan penyakit dan peningkatan kesehatan ibu dan anak. Program asuransi kesehatan yang terjangkau juga dapat membantu meringankan beban biaya kesehatan.',
+  },
+  {
+    id: 5,
+    title: 'Pertanian dan Pangan',
+    description: 'Mendukung pertanian berkelanjutan dan peningkatan produktivitas petani kecil. Ini termasuk penyediaan pelatihan, teknologi pertanian, dan akses ke pasar bagi para petani.',
+  },
+  {
+    id: 6,
+    title: 'Program Bantuan Sosial yang Efektif',
+    description: 'Merancang dan mengelola program bantuan sosial yang tepat sasaran, efisien, dan transparan. Pendekatan ini mencakup program bantuan tunai langsung atau program subsidi untuk kebutuhan dasar.',
+  },
+  {
+    id: 7,
+    title: 'Infrastruktur dan Akses Pelayanan Dasar',
+    description: 'Meningkatkan infrastruktur dasar seperti jalan, air bersih, dan sanitasi. Ini dapat meningkatkan akses masyarakat terhadap layanan dasar dan menciptakan kondisi untuk pertumbuhan ekonomi lokal.',
+  },
+  {
+    id: 8,
+    title: 'Pemberdayaan Komunitas Lokal',
+    description: 'Memberdayakan komunitas lokal untuk mengidentifikasi dan menyelesaikan masalah mereka sendiri. Pendekatan partisipatif dan inklusif dapat memastikan bahwa solusi yang diusulkan memenuhi kebutuhan sebenarnya.',
+  },
+]
+
+export const DATA_RECOMEN_DONATIONS: RecomendDonations[] = [
+  {
+    id: 1,
+    img: 'https://kitabisa.com/_next/image?url=https%3A%2F%2Fimgix.kitabisa.com%2F5583940f-44ad-499e-88cf-a30317c80fba.jpg%3Fauto%3Dformat%26fm%3Dpjpg%26ch%3DWidth%2CDPR%2CSave-Data%2CViewport-Width&w=256&q=75',
+    company: 'Company Baik',
+    title: '#GerobakGratis Nolong Keluarga Dhuafa Bisa Makan',
+    total_donations: 33165119,
+    max_donations: 150000000
+  },
+  {
+    id: 2,
+    img: 'https://kitabisa.com/_next/image?url=https%3A%2F%2Fimgix.kitabisa.com%2Fb637aac3-3813-486f-98cb-c428adc6e012.jpg%3Fauto%3Dformat%26fm%3Dpjpg%26ch%3DWidth%2CDPR%2CSave-Data%2CViewport-Width&w=256&q=75',
+    company: 'Penghubung Kebaikan',
+    title: 'Bantu Pejuang Gagal Ginjal Anak Pulih & Bertahan',
+    total_donations: 134913993,
+    max_donations: 150000000
+  },
+  {
+    id: 3,
+    img: 'https://kitabisa.com/_next/image?url=https%3A%2F%2Fimgix.kitabisa.com%2Fd06337f9-78a2-4a4c-b6ef-3c713338db53.jpg%3Fauto%3Dformat%26fm%3Dpjpg%26ch%3DWidth%2CDPR%2CSave-Data%2CViewport-Width&w=256&q=75',
+    company: 'Penghubung Kebaikan',
+    title: 'Ayo Berikan Semangat untuk Lansia Dhuafa Pejuang Sembuh',
+    total_donations: 126194038,
+    max_donations: 150000000
+  },
+  {
+    id: 4,
+    img: 'https://kitabisa.com/_next/image?url=https%3A%2F%2Fimgix.kitabisa.com%2Fmaster%2F8933d4c3-afcd-11ee-8cad-cedc830fba85_9AE73534FD0A9F61.png%3Fauto%3Dformat%26fm%3Dpjpg%26ch%3DWidth%2CDPR%2CSave-Data%2CViewport-Width&w=256&q=75',
+    company: 'Sekawan Foundation',
+    title: 'Bangun Rumah Anak Penderita Thalasemia',
+    total_donations: 80000000,
+    max_donations: 100000000
   },
 ]

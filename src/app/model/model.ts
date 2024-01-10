@@ -78,3 +78,18 @@ export interface OtherNews{
     title: string;
     area: string;
 }
+
+export interface GovernmentSolution{
+    id: number;
+    title: string;
+    description: string;
+}
+
+export interface RecomendDonations{
+    id: number;
+    img: string;
+    company: string;
+    title: string;
+    total_donations: number;
+    max_donations: number
+}
