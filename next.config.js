@@ -23,11 +23,6 @@ const nextConfig = {
                 hostname: 'asset.ayobantu.com',
                 pathname: '**'
             },
-            {
-                protocol: 'https',
-                hostname: 'kitabisa.com',
-                pathname: '**'
-            },
         ]
     }
 }
