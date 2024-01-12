@@ -1377,4 +1377,28 @@ export const DATA_RECOMEN_DONATIONS: RecomendDonations[] = [
     total_donations: 80000000,
     max_donations: 100000000
   },
+  {
+    id: 5,
+    img: 'https://kitabisa.com/_next/image?url=https%3A%2F%2Fgudang-prod.imgix.net%2Fimages%2Fe76793ff-aea3-11ee-9b0f-6e91684a1331_68CC4EECF878A08E.jpg%3Fauto%3Dcompress%2Cformat%26cs%3Dtinysrgb%26fm%3Dpjpg%26fit%3Dclip%26w%3D448%26dpr%3D2%26sharp%3D15&w=1080&q=75',
+    company: 'Sekawan Foundation',
+    title: 'Bangun Rumah Anak Penderita Thalasemia',
+    total_donations: 80000000,
+    max_donations: 100000000
+  },
+  {
+    id: 6,
+    img: 'https://kitabisa.com/_next/image?url=https%3A%2F%2Fgudang-prod.imgix.net%2Fimages%2Feca3f537-aea3-11ee-9579-9e46e8a90241_823EC7986CEC95C0.jpg%3Fauto%3Dcompress%2Cformat%26cs%3Dtinysrgb%26fm%3Dpjpg%26fit%3Dclip%26w%3D448%26dpr%3D2%26sharp%3D15&w=1080&q=75',
+    company: 'Sekawan Foundation',
+    title: 'Bangun Rumah Anak Penderita Thalasemia',
+    total_donations: 80000000,
+    max_donations: 100000000
+  },
+  {
+    id: 7,
+    img: 'https://kitabisa.com/_next/image?url=https%3A%2F%2Fgudang-prod.imgix.net%2Fimages%2Ff1a4f367-aea3-11ee-8cad-cedc830fba85_475FE3DF5E0FE288.jpg%3Fauto%3Dcompress%2Cformat%26cs%3Dtinysrgb%26fm%3Dpjpg%26fit%3Dclip%26w%3D448%26dpr%3D2%26sharp%3D15&w=1080&q=75',
+    company: 'Sekawan Foundation',
+    title: 'Bangun Rumah Anak Penderita Thalasemia',
+    total_donations: 80000000,
+    max_donations: 100000000
+  },
 ]

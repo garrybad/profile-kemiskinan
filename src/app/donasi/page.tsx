@@ -16,6 +16,7 @@ import { Autoplay, Pagination, Navigation } from 'swiper/modules';
 import Image from 'next/image';
 import { RecomendDonations } from '../model/model';
 import { DATA_RECOMEN_DONATIONS } from '../dummy/dummy_data_statistik';
+import Link from 'next/link';
 
 const inter = Inter({
   subsets: ['latin'],
@@ -23,7 +24,8 @@ const inter = Inter({
 })
 
 function Donasi() {
-  let dataRecomenDonations: RecomendDonations[] = DATA_RECOMEN_DONATIONS;
+  let dataRecomenDonations: RecomendDonations[] = DATA_RECOMEN_DONATIONS.filter(item => item.id < 5);
+  let topData = DATA_RECOMEN_DONATIONS.filter(item => item.id >= 5 && item.id <= 7);
   // Function to format number with comma separator
   let formatNumberWithComma = (number: number): string => {
     return number.toString().replace(/\B(?=(\d{3})+(?!\d))/g, ".");
@@ -50,39 +52,39 @@ function Donasi() {
             // navigation={true}
             modules={[Autoplay, Pagination, Navigation]}
             className="w-full sm:h-[80vh]">
-            <SwiperSlide>
-              <Image className="w-full h-full object-cover cursor-pointer" sizes="100vw" src={'https://kitabisa.com/_next/image?url=https%3A%2F%2Fgudang-prod.imgix.net%2Fimages%2Fe76793ff-aea3-11ee-9b0f-6e91684a1331_68CC4EECF878A08E.jpg%3Fauto%3Dcompress%2Cformat%26cs%3Dtinysrgb%26fm%3Dpjpg%26fit%3Dclip%26w%3D448%26dpr%3D2%26sharp%3D15&w=1080&q=75'} width={0} height={0} alt="Shoes" />
-            </SwiperSlide>
-            <SwiperSlide>
-              <Image className="w-full h-full object-cover cursor-pointer" sizes="100vw" src={'https://kitabisa.com/_next/image?url=https%3A%2F%2Fgudang-prod.imgix.net%2Fimages%2Feca3f537-aea3-11ee-9579-9e46e8a90241_823EC7986CEC95C0.jpg%3Fauto%3Dcompress%2Cformat%26cs%3Dtinysrgb%26fm%3Dpjpg%26fit%3Dclip%26w%3D448%26dpr%3D2%26sharp%3D15&w=1080&q=75'} width={0} height={0} alt="Shoes" />
-            </SwiperSlide>
-            <SwiperSlide>
-              <Image className="w-full h-full object-cover cursor-pointer" sizes="100vw" src={'https://kitabisa.com/_next/image?url=https%3A%2F%2Fgudang-prod.imgix.net%2Fimages%2Ff1a4f367-aea3-11ee-8cad-cedc830fba85_475FE3DF5E0FE288.jpg%3Fauto%3Dcompress%2Cformat%26cs%3Dtinysrgb%26fm%3Dpjpg%26fit%3Dclip%26w%3D448%26dpr%3D2%26sharp%3D15&w=1080&q=75'} width={0} height={0} alt="Shoes" />
-            </SwiperSlide>
+            {topData.map((x) => {
+              return (
+                <SwiperSlide key={x.id}>
+                  <Link href={`/donasi/${x.id}`}>
+                    <Image className="w-full h-full object-cover cursor-pointer" sizes="100vw" src={x.img} width={0} height={0} alt="Shoes" />
+                  </Link>
+                </SwiperSlide>
+              )
+            })}
           </Swiper>
         </div>
 
         <div>
+          <Link href={`/donasi/${1}`}>
+            <div>tess</div>
+          </Link>
           <div className='text-black font-bold mb-2 text-lg'>Rekomendai Donasi</div>
           <div className='sm:grid grid-cols-4 gap-4'>
             {dataRecomenDonations.map((x) => {
               return (
-                <div key={x.id} className="card w-full bg-base-100 shadow-xl cursor-pointer hover:-translate-y-1 hover:scale-103 duration-300 rounded-lg mb-4 sm:mb-0">
-                  <figure>
-                    {/* <img src="https://asset.ayobantu.com/campaign/dH2by29s3q_1689335196.jpg" alt="Shoes" /> */}
-                    <Image className="w-full h-[20vh] object-cover" sizes="100vw" src={x.img} width={0} height={0} alt="Shoes" />
-                  </figure>
-                  <div className="card-body bg-neutral-50">
-                    {/* <h2 className="card-title">Shoes!</h2> */}
-                    <div className="card-title text-gray-600">{x.company}</div>
-                    <div className='text-black font-bold'>{x.title}</div>
-                    <div className='text-gray-600'>Tersedia <span className='text-blue-400 font-bold'>Rp{formatNumberWithComma(x.total_donations)}</span></div>
-                    <progress className="progress progress-info w-full" value={x.total_donations} max={x.max_donations}></progress>
-                    {/* <div className="card-actions justify-end">
-                  <button className="btn btn-primary">Buy Now</button>
-                </div> */}
+                <Link key={x.id} href={`/donasi/${x.id}`}>
+                  <div className="card w-full h-full bg-base-100 shadow-xl cursor-pointer hover:-translate-y-1 hover:scale-103 duration-300 rounded-lg mb-4 sm:mb-0">
+                    <figure>
+                      <Image className="w-full h-[20vh] object-cover" sizes="100vw" src={x.img} width={0} height={0} alt="Shoes" />
+                    </figure>
+                    <div className="card-body bg-neutral-50">
+                      <div className="card-title text-gray-600">{x.company}</div>
+                      <div className='text-black font-bold'>{x.title}</div>
+                      <div className='text-gray-600'>Tersedia <span className='text-blue-400 font-bold'>Rp{formatNumberWithComma(x.total_donations)}</span></div>
+                      <progress className="progress progress-info w-full" value={x.total_donations} max={x.max_donations}></progress>
+                    </div>
                   </div>
-                </div>
+                </Link>
               )
             })}
           </div>
