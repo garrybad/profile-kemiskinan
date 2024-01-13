@@ -9,6 +9,11 @@ const inter = Inter({
 })
 
 export default function DetailDonasi() {
+    let rawDesc = 'FUN Run For Humanity merupakan sebuah event lari amal yang bermakna dengan tema "Charity Fun Run for Palestine" Event ini bertujuan untuk meningkatkan kepedulian sesama dimasyarakat melalui kegiatan kemanusiaan yang  fun dan sehat. Kami mengajak Anda untuk bergabung dalam gerakan solidaritas ini, di mana setiap langkah yang Anda ambil akan memberikan dukungan nyata untuk kemanusiaan di Palestina. Dalam Fun Run For Humanity, bukan hanya tentang berlari dan fun, tetapi juga memberikan harapan dan solidaritas kepada saudara-saudara kita di Palestina yang menghadapi tantangan yang luar biasa. Bagai tak ada habisnya, konflik dan ketidakstabilan telah membawa penderitaan yang tidak terbayangkan kepada masyarakat Palestina, kerusakan fasilitas-fasilitas penting masyarakat pun turut menjadi sasaran. Pada tahun ini, Run for Humanity dan Radeyah Run bekerjasama dengan Musawarah Peduli dengan dukungan Pemerintah Kota Tangerang Selatan dan B Clinic akan menyalurkan donasi untuk bantuan kemanusiaan Palestina. Melalui aksi ini, mari bersama-sama kita bantu ringankan kesedihan dan duka warga Palestina. Setiap langkah yang diambil memiliki arti, karena semua dana yang terkumpul dari partisipasi Anda akan didonasikan untuk bantuan kemanusiaan Palestina.'
+    let descSplit = rawDesc.split('.').filter(item => item.trim() !== '').map(item => item + '.');
+    // console.log(descSplit);
+
+
     return (
         <div className={`${inter.className} bg-neutral-50 py-10 px-[35vh]`}>
             <div className='font-bold text-black text-4xl mb-4'>FUN RUN FOR HUMANITY "Charity Fun Run for Palestine"</div>
@@ -28,13 +33,11 @@ export default function DetailDonasi() {
                         <div className='border-b border-gray-300 py-4 font-normal text-black'>Dibuat 22 jam yang lalu • <span>Sosial</span></div>
 
                         <div className='py-4 font-normal text-black'>
-                            <p className='mb-3'>FUN Run For Humanity merupakan sebuah event lari amal yang bermakna dengan tema "Charity Fun Run for Palestine" Event ini bertujuan untuk meningkatkan kepedulian sesama dimasyarakat melalui kegiatan kemanusiaan yang  fun dan sehat.</p>
-                            <p className='mb-3'>Kami mengajak Anda untuk bergabung dalam gerakan solidaritas ini, di mana setiap langkah yang Anda ambil akan memberikan dukungan nyata untuk kemanusiaan di Palestina.</p>
-                            <p className='mb-3'>Dalam Fun Run For Humanity, bukan hanya tentang berlari dan fun, tetapi juga memberikan harapan dan solidaritas kepada saudara-saudara kita di Palestina yang menghadapi tantangan yang luar biasa. Bagai tak ada habisnya, konflik dan ketidakstabilan telah membawa penderitaan yang tidak terbayangkan kepada masyarakat Palestina, kerusakan fasilitas-fasilitas penting masyarakat pun turut menjadi sasaran.</p>
-                            <p className='mb-3'>Pada tahun ini, Run for Humanity dan Radeyah Run bekerjasama dengan Musawarah Peduli dengan dukungan Pemerintah Kota Tangerang Selatan dan B Clinic akan menyalurkan donasi untuk bantuan kemanusiaan Palestina.</p>
-                            <p className='mb-3'>Melalui aksi ini, mari bersama-sama kita bantu ringankan kesedihan dan duka warga Palestina.</p>
-                            <p className='mb-3'>Setiap langkah yang diambil memiliki arti, karena semua dana yang terkumpul dari partisipasi Anda akan didonasikan untuk bantuan kemanusiaan Palestina.</p>
-
+                            {descSplit.map((x) => {
+                                return (
+                                    <p className='mb-3'>{x}</p>
+                                )
+                            })}
                             <button className="btn btn-outline w-full text-black">Donasi</button>
                         </div>
                     </div>

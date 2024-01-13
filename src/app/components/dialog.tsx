@@ -33,7 +33,7 @@ function Dialog(props: Props) {
                 </form>
                 {/* <h3 className="font-bold text-lg">Hello!</h3> */}
                 {/* <p className="py-4">ID : {props.id}</p> */}
-                <Image className="w-full h-[60vh] object-cover mt-4" sizes="100vw" src={props.img} width={0} height={0} alt='Poverty' />
+                <Image className="w-full h-[60vh] object-cover mt-4 rounded-lg" sizes="100vw" src={props.img} width={0} height={0} alt='Poverty' />
                 <div className='mt-2 text-end'>
                     <button className="btn bg-green-500 border-none text-white hover:bg-green-500 hover:brightness-75" onClick={saveFile}>Download</button>
                 </div>

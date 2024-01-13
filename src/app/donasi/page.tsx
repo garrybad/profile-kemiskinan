@@ -56,7 +56,7 @@ function Donasi() {
               return (
                 <SwiperSlide key={x.id}>
                   <Link href={`/donasi/${x.id}`}>
-                    <Image className="w-full h-full object-cover cursor-pointer" sizes="100vw" src={x.img} width={0} height={0} alt="Shoes" />
+                    <Image className="w-full h-full object-cover cursor-pointer rounded-lg" sizes="100vw" src={x.img} width={0} height={0} alt="Shoes" />
                   </Link>
                 </SwiperSlide>
               )
@@ -65,19 +65,16 @@ function Donasi() {
         </div>
 
         <div>
-          <Link href={`/donasi/${1}`}>
-            <div>tess</div>
-          </Link>
-          <div className='text-black font-bold mb-2 text-lg'>Rekomendai Donasi</div>
+          <div className='text-black font-bold mb-2 text-lg'>Rekomendasi Donasi</div>
           <div className='sm:grid grid-cols-4 gap-4'>
             {dataRecomenDonations.map((x) => {
               return (
                 <Link key={x.id} href={`/donasi/${x.id}`}>
-                  <div className="card w-full h-full bg-base-100 shadow-xl cursor-pointer hover:-translate-y-1 hover:scale-103 duration-300 rounded-lg mb-4 sm:mb-0">
+                  <div className="card w-full h-full bg-neutral-50 rounded-lg shadow-xl cursor-pointer hover:-translate-y-1 hover:scale-103 duration-300 mb-4 sm:mb-0">
                     <figure>
                       <Image className="w-full h-[20vh] object-cover" sizes="100vw" src={x.img} width={0} height={0} alt="Shoes" />
                     </figure>
-                    <div className="card-body bg-neutral-50">
+                    <div className="card-body">
                       <div className="card-title text-gray-600">{x.company}</div>
                       <div className='text-black font-bold'>{x.title}</div>
                       <div className='text-gray-600'>Tersedia <span className='text-blue-400 font-bold'>Rp{formatNumberWithComma(x.total_donations)}</span></div>

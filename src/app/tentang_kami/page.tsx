@@ -20,7 +20,7 @@ function TentangKami() {
                 <div className={`${poppins.className} text-black font-normal text-lg sm:text-4xl mb-2`}>Mengubah Persepsi, Membangun Kesempatan, Bersama-Sama Melawan Kemiskinan.</div>
 
                 <div className='mb-2'>
-                    <Image className="w-full h-[30vh] sm:h-[70vh] object-cover rounded-xl" sizes="100vw" src={aboutImg} width={0} height={0} alt='Poverty' />
+                    <Image className="w-full h-[30vh] sm:h-[70vh] object-cover rounded-lg" sizes="100vw" src={aboutImg} width={0} height={0} alt='Poverty' />
                 </div>
 
                 <div className={`${poppins.className} font-light text-sm sm:text-xl text-black mb-10`}>

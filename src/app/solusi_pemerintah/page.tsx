@@ -29,14 +29,14 @@ function SolusiPemerintah() {
       <div className='sm:grid grid-cols-12 gap-4 sm:mx-[20vh]'>
         <div className='hidden col-span-4 sm:flex items-center'>
           <div className='w-full h-[90vh]'>
-            <Image className="w-full h-full object-cover" sizes="100vw" src={'https://images.unsplash.com/photo-1612401133613-045125f0aa7f?w=500&auto=format&fit=crop&q=60&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxzZWFyY2h8OTZ8fHBvdmVydHl8ZW58MHx8MHx8fDA%3D'} width={0} height={0} alt="Shoes" />
+            <Image className="w-full h-full object-cover rounded-lg" sizes="100vw" src={'https://images.unsplash.com/photo-1612401133613-045125f0aa7f?w=500&auto=format&fit=crop&q=60&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxzZWFyY2h8OTZ8fHBvdmVydHl8ZW58MHx8MHx8fDA%3D'} width={0} height={0} alt="Shoes" />
           </div>
         </div>
         <div className='col-span-8'>
           <div className='sm:grid grid-cols-2 gap-4'>
             {dataSolution.map((x) => {
               return (
-                <div className='shadow-md rounded p-6 min-h-[30vh] whitespace-normal mb-4 sm:mb-0' key={x.id}>
+                <div className='shadow-md rounded-lg p-6 min-h-[30vh] whitespace-normal mb-4 sm:mb-0' key={x.id}>
                   <div className='text-black font-bold mb-1'>{x.title}</div>
                   <div className='text-gray-600 font-normal text-base'>{x.description}</div>
                 </div>

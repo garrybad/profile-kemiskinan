@@ -25,7 +25,7 @@ function Galeri() {
                 {dataGallery.map((x) => {
                     return (
                         <div key={x.id} className='mb-4 sm:m-0'>
-                            <Image className="w-full h-[30vh] object-cover cursor-zoom-in" onClick={() => {
+                            <Image className="w-full h-[30vh] object-cover cursor-zoom-in rounded-lg" onClick={() => {
                                 if (document) {
                                     (document.getElementById(x.imgId) as HTMLFormElement).showModal();
                                 }
