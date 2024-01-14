@@ -8,15 +8,6 @@ interface Props {
 }
 
 function Dialog(props: Props) {
-    const handleDownload = () => {
-        const link = document.createElement('a');
-        link.href = props.img;
-        link.download = 'downloaded-image';
-        document.body.appendChild(link);
-        link.click();
-        document.body.removeChild(link);
-    };
-
     const saveFile = () => {
         saveAs(
             props.img,

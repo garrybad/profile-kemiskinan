@@ -23,6 +23,11 @@ const nextConfig = {
                 hostname: 'asset.ayobantu.com',
                 pathname: '**'
             },
+            {
+                protocol: 'https',
+                hostname: 'akcdn.detik.net.id',
+                pathname: '**'
+            },
         ]
     }
 }

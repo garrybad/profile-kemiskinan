@@ -1,8 +1,11 @@
+"use client"
+
 import Link from 'next/link'
 import React from 'react'
 import { Lacquer } from 'next/font/google' 
 import { Jost } from 'next/font/google' 
 import { Poppins } from 'next/font/google' 
+import Login from './login'
 
 const lacquer = Lacquer({ 
     subsets: ['latin'],
@@ -46,7 +49,8 @@ const Navbar = () => {
         </ul>
       </div>
       <div className="navbar-end">
-        <a className={`${poppins.className} btn font-normal`}>Login</a>
+        <a className={`${poppins.className} btn btn-sm font-normal bg-neutral-50 border-none text-black hover:bg-gray-200`} onClick={() => {if (document) {(document.getElementById('modal_login') as HTMLFormElement).showModal();}}}>Sign In</a>
+        <Login />
       </div>
     </div>
   )

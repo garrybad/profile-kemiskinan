@@ -91,5 +91,10 @@ export interface RecomendDonations{
     company: string;
     title: string;
     total_donations: number;
-    max_donations: number
+    max_donations: number;
+    created: string;
+    people_donations: number;
+    remaining_time_donations: string;
+    description: string;
+    img_detail: string;
 }

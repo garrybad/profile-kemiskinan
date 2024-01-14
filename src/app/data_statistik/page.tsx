@@ -1,7 +1,7 @@
 import React from 'react'
 import dynamic from 'next/dynamic';
 import Table from '../components/table';
-import { Poppins } from 'next/font/google';
+import { Inter } from 'next/font/google';
 import { ColDef, ColGroupDef } from 'ag-grid-community';
 import { Data1, Data2, Data3, Data4, Data5 } from '../model/model';
 import { DATA_DUMMY1, DATA_DUMMY2, DATA_DUMMY3, DATA_DUMMY4, DATA_DUMMY5 } from '../dummy/dummy_data_statistik';
@@ -9,9 +9,9 @@ import { DATA_DUMMY1, DATA_DUMMY2, DATA_DUMMY3, DATA_DUMMY4, DATA_DUMMY5 } from 
 const ColumnChart = dynamic(() => import('../components/column_chart'), { ssr: false });
 const PieChart = dynamic(() => import('../components/pie_chart'), { ssr: false });
 
-const poppins = Poppins({
+const inter = Inter({
   subsets: ['latin'],
-  weight: ['200', '400', '700']
+  weight: ['300', '400', '600', '700']
 })
 
 function DataStatistik() {
@@ -136,21 +136,21 @@ function DataStatistik() {
   return (
     <div className='bg-neutral-50 p-10'>
       <div className='mb-4'>
-        <div className={`${poppins.className} text-black font-bold text-2xl text-center`}>Halaman Data & Statistik</div>
-        <div className={`${poppins.className} font-normal text-base text-center sm:mx-40 text-black`}>Melalui infografik, grafik, dan analisis mendalam, halaman ini memberikan gambaran komprehensif tentang distribusi pendapatan, akses pendidikan, layanan kesehatan, dan tantangan ekonomi lainnya yang dihadapi oleh individu dan komunitas yang terpinggirkan.</div>
+        <div className={`${inter.className} text-black font-bold text-2xl text-center`}>Halaman Data & Statistik</div>
+        <div className={`${inter.className} font-normal text-base text-center sm:mx-40 text-black`}>Melalui infografik, grafik, dan analisis mendalam, halaman ini memberikan gambaran komprehensif tentang distribusi pendapatan, akses pendidikan, layanan kesehatan, dan tantangan ekonomi lainnya yang dihadapi oleh individu dan komunitas yang terpinggirkan.</div>
       </div>
 
       <div className='sm:grid grid-cols-2 gap-4 mb-4'>
         <div className="card w-full bg-neutral-50 shadow-xl rounded-lg mb-4 sm:m-0">
           <div className="card-body">
-            <h2 className={`${poppins.className} card-title font-normal text-black`}>Jumlah dan Persentase Penduduk Miskin, September 2012 – Maret 2023</h2>
+            <h2 className={`${inter.className} card-title font-normal text-black`}>Jumlah dan Persentase Penduduk Miskin, September 2012 – Maret 2023</h2>
             <ColumnChart />
           </div>
         </div>
 
         <div className="card w-full bg-neutral-50 shadow-xl rounded-lg">
           <div className="card-body">
-            <h2 className={`${poppins.className} card-title font-normal text-black`}>Jumlah dan Persentase Penduduk Miskin menurut Pulau, Maret 2023</h2>
+            <h2 className={`${inter.className} card-title font-normal text-black`}>Jumlah dan Persentase Penduduk Miskin menurut Pulau, Maret 2023</h2>
             <PieChart />
           </div>
         </div>
@@ -158,35 +158,35 @@ function DataStatistik() {
 
       <div className="card w-full bg-neutral-50 shadow-xl rounded-lg mb-4">
         <div className="card-body">
-          <h2 className={`${poppins.className} card-title font-normal text-black`}>Jumlah dan Persentase Penduduk Miskin Menurut Daerah, Maret 2022 – Maret 2023</h2>
+          <h2 className={`${inter.className} card-title font-normal text-black`}>Jumlah dan Persentase Penduduk Miskin Menurut Daerah, Maret 2022 – Maret 2023</h2>
           <Table dataRow={dataTable1} dataCol={dataCol1} autoGroup={{ headerName: 'Daerah' }} />
         </div>
       </div>
 
       <div className="card w-full bg-neutral-50 shadow-xl rounded-lg mb-4">
         <div className="card-body">
-          <h2 className={`${poppins.className} card-title font-normal text-black`}>Jumlah dan Persentase Penduduk Miskin Menurut Daerah, Maret 2022 – Maret 2023</h2>
+          <h2 className={`${inter.className} card-title font-normal text-black`}>Jumlah dan Persentase Penduduk Miskin Menurut Daerah, Maret 2022 – Maret 2023</h2>
           <Table dataRow={dataRow2} dataCol={dataCol2} />
         </div>
       </div>
 
       <div className="card w-full bg-neutral-50 shadow-xl rounded-lg mb-4">
         <div className="card-body">
-          <h2 className={`${poppins.className} card-title font-normal text-black`}>Jumlah Penduduk Miskin Menurut Provinsi, September 2022 dan Maret 2023</h2>
+          <h2 className={`${inter.className} card-title font-normal text-black`}>Jumlah Penduduk Miskin Menurut Provinsi, September 2022 dan Maret 2023</h2>
           <Table dataRow={dataRow3} dataCol={dataCol3} />
         </div>
       </div>
 
       <div className="card w-full bg-neutral-50 shadow-xl rounded-lg mb-4">
         <div className="card-body">
-          <h2 className={`${poppins.className} card-title font-normal text-black`}>Garis Kemiskinan per Kapita Menurut Provinsi dan Daerah, September 2022 dan Maret 2023</h2>
+          <h2 className={`${inter.className} card-title font-normal text-black`}>Garis Kemiskinan per Kapita Menurut Provinsi dan Daerah, September 2022 dan Maret 2023</h2>
           <Table dataRow={dataRow4} dataCol={dataCol4} />
         </div>
       </div>
 
       <div className="card w-full bg-neutral-50 shadow-xl rounded-lg">
         <div className="card-body">
-          <h2 className={`${poppins.className} card-title font-normal text-black`}>Garis Kemiskinan per Rumah Tangga Menurut Provinsi dan Daerah, September 2022 dan Maret 2023</h2>
+          <h2 className={`${inter.className} card-title font-normal text-black`}>Garis Kemiskinan per Rumah Tangga Menurut Provinsi dan Daerah, September 2022 dan Maret 2023</h2>
           <Table dataRow={dataRow5} dataCol={dataCol5} />
         </div>
       </div>
