@@ -38,7 +38,7 @@ export default function Home() {
     <div className='bg-neutral-50'>
       <div className="w-full h-[85vh]">
         <Image className="w-full h-[85vh] object-cover absolute brightness-50" sizes='100vw' width={0} height={0} alt='background' src="https://images.unsplash.com/photo-1528194764949-125c374c41af?q=80&w=1451&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D" />
-        <div className="w-full z-[1] absolute h-[85vh] p-10 flex flex-col justify-center sm:w-full sm:flex-wrap text-center">
+        <div className="w-full z-[1] absolute h-[85vh] sm:p-[20vh] p-10 flex flex-col justify-center sm:w-full sm:flex-wrap text-center">
           <div className={`${inter.className} font-bold text-5xl text-white mb-3`}>Mengungkap Realitas, Menginspirasi Perubahan: Profil Kemiskinan Indonesia</div>
           <div className={`${inter.className} font-light text-1xl text-white`}>Profile Kemiskinan Di Indonesia adalah sumber informasi terkini dan mendalam mengenai realitas kemiskinan di Indonesia. Kami berkomitmen untuk menggambarkan secara akurat tantangan yang dihadapi oleh masyarakat yang kurang beruntung, sambil mendorong kesadaran dan aksi positif. Temukan cerita yang menginspirasi, data yang mengungkap, dan langkah-langkah nyata menuju perubahan. Bersama-sama, mari kita menjadi suara bagi mereka yang terpinggirkan dan membangun jalan menuju keadilan sosial.</div>
         </div>

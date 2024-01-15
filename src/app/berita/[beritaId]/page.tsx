@@ -27,7 +27,7 @@ export default function DetailBerita() {
             </div>
 
             <div className='py-4 font-normal text-black'>
-                <p className='mb-3'>Jakarta, CNN Indonesia -- Pemerintah bakal tetap menggunakan ambang batas kemiskinan ekstrem dengan penghasilan berpUS$1,9 atau Rp29.461 per hari demi mencapai target nol persen kemiskinan ekstrem di 2024.</p>
+                <p className='mb-3'>Jakarta, CNN Indonesia - Pemerintah bakal tetap menggunakan ambang batas kemiskinan ekstrem dengan penghasilan US$1,9 atau Rp29.461 per hari demi mencapai target nol persen kemiskinan ekstrem di 2024.</p>
                 <p className='mb-3'>Patokan Bank Dunia itu merupakan standar lama lantaran sudah ada ambang batas terbaru, yakni penghasilan US$2,15 per atau Rp32.035 per orang per hari.</p>
                 <p className='mb-3'>Deputi Bidang Dukungan Kebijakan Pembangunan Manusia dan Pemerataan Pembangunan Sekretariat Wakil Presiden Suprayoga Hadi menyebut pihaknya dan Badan Pusat Statistik (BPS) sepakat tetap menggunakan angka US$1,9 untuk batas kemiskinan ekstrem.</p>
                 <p className='mb-3'>Ia menjelaskan saat ini pun tak ada sanksi bagi negara yang tetap menggunakan ambang batas lama, US$1,9 per hari. Oleh karena itu, data angka kemiskinan ekstrem pun tetap valid.</p>

@@ -27,13 +27,12 @@ function Berita() {
           <div className='col-span-8 pt-4 pl-4 pb-4 cursor-pointer' style={{ height: 'inherit' }}>
             <Link href={`/berita/1`}>
               <div className='w-full h-[50vh] rounded-lg overflow-hidden'>
-                <Image className="w-full h-full object-cover mb-4 ease-in-out duration-300 hover:scale-125" sizes="100vw" src={'https://images.unsplash.com/photo-1608342381036-15657da6bf58?w=500&auto=format&fit=crop&q=60&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxzZWFyY2h8MTF8fHBvdmVydHl8ZW58MHx8MHx8fDA%3D'} width={0} height={0} alt="Shoes" />
+                <Image className="w-full h-full object-cover mb-4 ease-in-out duration-300 hover:scale-125" sizes="100vw" src={'https://akcdn.detik.net.id/visual/2022/06/23/kemiskinan-di-jakarta-7_169.jpeg?w=650&q=90'} width={0} height={0} alt="Shoes" />
               </div>
-              <div className={`text-black font-bold text-2xl mb-2`}>Atikoh Pastikan Ganjar-Mahfud Md Berantas Kemiskinan dan Stabilkan Harga Pangan</div>
+              <div className={`text-black font-bold text-2xl mb-2`}>RI Keukeuh Pakai Standar Lama Demi Kemiskinan Ekstrem Nol Persen 2024</div>
               <div className={`text-black`}>
-                &quot;Nah, apa program Ganjar-Mahfud menurunkan kemiskinan? Pertama kalau kita bicara kemiskinan, penanggulangan
-                kemiskinan yang harus diselesaikan dari akar ialah pendidikan. Wajib belajar 12 tahun. Ketika ada wajib di sini, berarti
-                UU harus berpihak bahwa pendidikan dari SD sampai SMA gratis,&quot; ungkap dia.
+              Jakarta, CNN Indonesia - Pemerintah bakal tetap menggunakan ambang batas kemiskinan ekstrem dengan penghasilan US$1,9 atau Rp29.461 per hari demi mencapai target nol persen kemiskinan ekstrem di 2024.
+              Patokan Bank Dunia itu merupakan standar lama lantaran sudah ada ambang batas terbaru, yakni penghasilan US$2,15 per atau Rp32.035 per orang per hari.
               </div>
             </Link>
           </div>
