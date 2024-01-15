@@ -46,8 +46,8 @@ export default function DetailBerita() {
                 <div className='sm:grid grid-cols-3 gap-4'>
                     {dataHeadlines.map((x) => {
                         return (
-                            <Link href={`/berita/1`}>
-                                <div key={x.id} className='mb-3 sm:m-0 cursor-pointer'>
+                            <Link key={x.id} href={`/berita/1`}>
+                                <div className='mb-3 sm:m-0 cursor-pointer'>
                                     <div className='w-full h-[20vh] overflow-hidden rounded-lg '>
                                         <Image className="w-full h-full object-cover mb-2 ease-in-out duration-300 hover:scale-125" sizes="100vw" src={x.img} width={0} height={0} alt="Shoes" />
                                     </div>

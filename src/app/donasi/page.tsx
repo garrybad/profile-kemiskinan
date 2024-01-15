@@ -69,19 +69,21 @@ function Donasi() {
           <div className='sm:grid grid-cols-4 gap-4'>
             {dataRecomenDonations.map((x) => {
               return (
-                <Link key={x.id} href={`/donasi/${x.id}`}>
-                  <div className="card w-full h-full bg-neutral-50 rounded-lg shadow-xl cursor-pointer hover:-translate-y-1 hover:scale-103 duration-300 mb-4 sm:mb-0">
-                    <figure>
-                      <Image className="w-full h-[20vh] object-cover" sizes="100vw" src={x.img} width={0} height={0} alt="Shoes" />
-                    </figure>
-                    <div className="card-body">
-                      <div className="card-title text-gray-600">{x.company}</div>
-                      <div className='text-black font-bold'>{x.title}</div>
-                      <div className='text-gray-600'>Tersedia <span className='text-blue-400 font-bold'>Rp{formatNumberWithComma(x.total_donations)}</span></div>
-                      <progress className="progress progress-info w-full" value={x.total_donations} max={x.max_donations}></progress>
+                <div key={x.id}>
+                  <Link href={`/donasi/${x.id}`}>
+                    <div className="card w-full h-full bg-neutral-50 rounded-lg shadow-xl cursor-pointer hover:-translate-y-1 hover:scale-103 duration-300 mb-4 sm:mb-0">
+                      <figure>
+                        <Image className="w-full h-[20vh] object-cover" sizes="100vw" src={x.img} width={0} height={0} alt="Shoes" />
+                      </figure>
+                      <div className="card-body">
+                        <div className="card-title text-gray-600">{x.company}</div>
+                        <div className='text-black font-bold'>{x.title}</div>
+                        <div className='text-gray-600'>Tersedia <span className='text-blue-400 font-bold'>Rp{formatNumberWithComma(x.total_donations)}</span></div>
+                        <progress className="progress progress-info w-full" value={x.total_donations} max={x.max_donations}></progress>
+                      </div>
                     </div>
-                  </div>
-                </Link>
+                  </Link>
+                </div>
               )
             })}
           </div>

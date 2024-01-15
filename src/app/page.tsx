@@ -57,12 +57,14 @@ export default function Home() {
             {dataOtherNews.map((x) => {
               return (
                 <div key={x.id} className='mb-3 sm:m-0 cursor-pointer'>
-                  <div className='w-full rounded-lg h-[35vh] overflow-hidden mb-2'>
-                    <Image className="w-full h-full object-cover ease-in-out duration-300 hover:scale-125" sizes="100vw" src={x.img} width={0} height={0} alt="Shoes" />
-                  </div>
-                  <div className=' text-gray-400'>2 Hari yang lalu</div>
-                  <div className={`text-black text-lg`}>{x.title}</div>
-                  <div className={`text-red-600 text-lg`}>{x.area}</div>
+                  <Link href={`/berita/1`}>
+                    <div className='w-full rounded-lg h-[35vh] overflow-hidden mb-2'>
+                      <Image className="w-full h-full object-cover ease-in-out duration-300 hover:scale-125" sizes="100vw" src={x.img} width={0} height={0} alt="Shoes" />
+                    </div>
+                    <div className=' text-gray-400'>2 Hari yang lalu</div>
+                    <div className={`text-black text-lg`}>{x.title}</div>
+                    <div className={`text-red-600 text-lg`}>{x.area}</div>
+                  </Link>
                 </div>
               )
             })}
@@ -88,29 +90,29 @@ export default function Home() {
         <div>
           <div className={`${inter.className} font-bold text-3xl text-black mb-2`}> Ayo Berbagi</div>
           <div className='mb-4'>
-              <Swiper spaceBetween={30}
-                // centeredSlides={true}
-                autoplay={{
-                  delay: 2500,
-                  disableOnInteraction: false,
-                }}
-                pagination={{
-                  clickable: true,
-                }}
-                // navigation={true}
-                modules={[Autoplay, Pagination, Navigation]}
-                className="w-full sm:h-[80vh]">
-                {topData.map((x) => {
-                  return (
-                    <SwiperSlide key={x.id}>
-                      <Link href={`/donasi/${x.id}`}>
-                        <Image className="w-full h-full object-cover cursor-pointer rounded-lg" sizes="100vw" src={x.img} width={0} height={0} alt="Shoes" />
-                      </Link>
-                    </SwiperSlide>
-                  )
-                })}
-              </Swiper>
-            </div>
+            <Swiper spaceBetween={30}
+              // centeredSlides={true}
+              autoplay={{
+                delay: 2500,
+                disableOnInteraction: false,
+              }}
+              pagination={{
+                clickable: true,
+              }}
+              // navigation={true}
+              modules={[Autoplay, Pagination, Navigation]}
+              className="w-full sm:h-[80vh]">
+              {topData.map((x) => {
+                return (
+                  <SwiperSlide key={x.id}>
+                    <Link href={`/donasi/${x.id}`}>
+                      <Image className="w-full h-full object-cover cursor-pointer rounded-lg" sizes="100vw" src={x.img} width={0} height={0} alt="Shoes" />
+                    </Link>
+                  </SwiperSlide>
+                )
+              })}
+            </Swiper>
+          </div>
         </div>
       </div>
     </div>
