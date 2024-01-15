@@ -1399,7 +1399,7 @@ export const DATA_RECOMEN_DONATIONS: RecomendDonations[] = [
   },
   {
     id: 5,
-    img: 'https://kitabisa.com/_next/image?url=https%3A%2F%2Fgudang-prod.imgix.net%2Fimages%2F0e85d165-b0f3-11ee-8cad-cedc830fba85_C985F63F422F4859.jpg%3Fauto%3Dcompress%2Cformat%26cs%3Dtinysrgb%26fm%3Dpjpg%26fit%3Dclip%26w%3D448%26dpr%3D2%26sharp%3D15&w=1080&q=75',
+    img: '/images/img_donations_5.jpeg',
     company: 'Yayasan Cahaya Sedekah Kebaikan',
     title: 'Sejahterakan Ratusan Lansia Pemulung Hidup Layak di Usia Senja',
     total_donations: 11000000,
