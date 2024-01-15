@@ -45,9 +45,11 @@ export default function DetailDonasi({ params }: { params: { donasiId: string } 
                         <div className='border-b border-gray-300 py-4 font-normal text-black'>Dibuat {dataDonations.created} • <span>Sosial</span></div>
 
                         <div className='py-4 font-normal text-black'>
-                            {formatDesc(dataDonations.description).map((x) => {
+                            {formatDesc(dataDonations.description).map((x, i) => {
                                 return (
-                                    <p className='mb-3'>{x}</p>
+                                    <div key={i}>
+                                        <p className='mb-3'>{x}</p>
+                                    </div>
                                 )
                             })}
                             {/* {descSplit.map((x) => {
