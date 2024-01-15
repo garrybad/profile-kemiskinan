@@ -42,15 +42,17 @@ function Berita() {
             <div className='h-[95%] overflow-y-scroll'>
               {dataPopularNews.map((x) => {
                 return (
-                  <Link href={`/berita/1`}>
-                    <div key={x.id} className='flex mb-2 cursor-pointer'>
-                      <div className={`text-gray-400 font-normal`}>{x.number}</div>
-                      <div className='ml-3'>
-                        <div className={`text-black font-bold`}>{x.title}</div>
-                        <div className={`text-red-600`}>{x.area}</div>
+                  <div key={x.id}>
+                    <Link href={`/berita/1`}>
+                      <div className='flex mb-2 cursor-pointer'>
+                        <div className={`text-gray-400 font-normal`}>{x.number}</div>
+                        <div className='ml-3'>
+                          <div className={`text-black font-bold`}>{x.title}</div>
+                          <div className={`text-red-600`}>{x.area}</div>
+                        </div>
                       </div>
-                    </div>
-                  </Link>
+                    </Link>
+                  </div>
                 )
               })}
             </div>
@@ -62,14 +64,16 @@ function Berita() {
           <div className='sm:grid grid-cols-6 gap-4'>
             {dataHeadlines.map((x) => {
               return (
-                <Link href={`/berita/1`}>
-                  <div key={x.id} className='mb-3 sm:m-0 cursor-pointer'>
-                    <div className='w-full rounded-lg h-[20vh] sm:h-[12vh] overflow-hidden'>
-                      <Image className="w-full h-full object-cover mb-2 ease-in-out duration-300 hover:scale-125" sizes="100vw" src={x.img} width={0} height={0} alt="Shoes" />
+                <div key={x.id}>
+                  <Link href={`/berita/1`}>
+                    <div key={x.id} className='mb-3 sm:m-0 cursor-pointer'>
+                      <div className='w-full rounded-lg h-[20vh] sm:h-[12vh] overflow-hidden'>
+                        <Image className="w-full h-full object-cover mb-2 ease-in-out duration-300 hover:scale-125" sizes="100vw" src={x.img} width={0} height={0} alt="Shoes" />
+                      </div>
+                      <div className={`text-black text-sm`}>{x.title}</div>
                     </div>
-                    <div className={`text-black text-sm`}>{x.title}</div>
-                  </div>
-                </Link>
+                  </Link>
+                </div>
               )
             })}
           </div>
@@ -80,15 +84,17 @@ function Berita() {
           <div className='sm:grid grid-cols-3 gap-4'>
             {dataOtherNews.map((x) => {
               return (
-                <Link href={`/berita/1`}>
-                  <div key={x.id} className='mb-3 sm:m-0 cursor-pointer'>
-                    <div className='w-full rounded-lg h-[20vh] overflow-hidden'>
-                      <Image className="w-full h-full object-cover mb-2 ease-in-out duration-300 hover:scale-125" sizes="100vw" src={x.img} width={0} height={0} alt="Shoes" />
+                <div key={x.id}>
+                  <Link href={`/berita/1`}>
+                    <div className='mb-3 sm:m-0 cursor-pointer'>
+                      <div className='w-full rounded-lg h-[20vh] overflow-hidden'>
+                        <Image className="w-full h-full object-cover mb-2 ease-in-out duration-300 hover:scale-125" sizes="100vw" src={x.img} width={0} height={0} alt="Shoes" />
+                      </div>
+                      <div className={`text-black text-sm`}>{x.title}</div>
+                      <div className={`text-red-600 text-sm`}>{x.area}</div>
                     </div>
-                    <div className={`text-black text-sm`}>{x.title}</div>
-                    <div className={`text-red-600 text-sm`}>{x.area}</div>
-                  </div>
-                </Link>
+                  </Link>
+                </div>
               )
             })}
           </div>
