@@ -1347,7 +1347,7 @@ export const DATA_SOLUTION: GovernmentSolution[] = [
 export const DATA_RECOMEN_DONATIONS: RecomendDonations[] = [
   {
     id: 1,
-    img: 'https://kitabisa.com/_next/image?url=https%3A%2F%2Fimgix.kitabisa.com%2F5583940f-44ad-499e-88cf-a30317c80fba.jpg%3Fauto%3Dformat%26fm%3Dpjpg%26ch%3DWidth%2CDPR%2CSave-Data%2CViewport-Width&w=256&q=75',
+    img: '/images/img_donations_1.jpeg',
     company: 'Company Baik',
     title: '#GerobakGratis Nolong Keluarga Dhuafa Bisa Makan',
     total_donations: 150000000,
@@ -1360,7 +1360,7 @@ export const DATA_RECOMEN_DONATIONS: RecomendDonations[] = [
   },
   {
     id: 2,
-    img: 'https://kitabisa.com/_next/image?url=https%3A%2F%2Fimgix.kitabisa.com%2Fb637aac3-3813-486f-98cb-c428adc6e012.jpg%3Fauto%3Dformat%26fm%3Dpjpg%26ch%3DWidth%2CDPR%2CSave-Data%2CViewport-Width&w=256&q=75',
+    img: '/images/img_donations_2.jpeg',
     company: 'Penghubung Kebaikan',
     title: 'Bantu Pejuang Gagal Ginjal Anak Pulih & Bertahan',
     total_donations: 134913993,
@@ -1373,7 +1373,7 @@ export const DATA_RECOMEN_DONATIONS: RecomendDonations[] = [
   },
   {
     id: 3,
-    img: 'https://kitabisa.com/_next/image?url=https%3A%2F%2Fimgix.kitabisa.com%2Fd06337f9-78a2-4a4c-b6ef-3c713338db53.jpg%3Fauto%3Dformat%26fm%3Dpjpg%26ch%3DWidth%2CDPR%2CSave-Data%2CViewport-Width&w=256&q=75',
+    img: '/images/img_donations_3.jpeg',
     company: 'Penghubung Kebaikan',
     title: 'Ayo Berikan Semangat untuk Lansia Dhuafa Pejuang Sembuh',
     total_donations: 126194038,
@@ -1386,7 +1386,7 @@ export const DATA_RECOMEN_DONATIONS: RecomendDonations[] = [
   },
   {
     id: 4,
-    img: 'https://kitabisa.com/_next/image?url=https%3A%2F%2Fimgix.kitabisa.com%2Fmaster%2Fbca32292-b2b3-11ee-9b0f-6e91684a1331_4AEDD67DCEA49848.png%3Fauto%3Dformat%26fm%3Dpjpg%26ch%3DWidth%2CDPR%2CSave-Data%2CViewport-Width&w=640&q=75',
+    img: '/images/img_donations_4.jpeg',
     company: 'YBM Hasuna',
     title: 'Berbagi Beras Tuk Lansia Dhuafa di Pelosok',
     total_donations: 5000000,
@@ -1412,7 +1412,7 @@ export const DATA_RECOMEN_DONATIONS: RecomendDonations[] = [
   },
   {
     id: 6,
-    img: 'https://kitabisa.com/_next/image?url=https%3A%2F%2Fgudang-prod.imgix.net%2Fimages%2F1342bf34-b0f3-11ee-9b0f-6e91684a1331_E338DC3716B92768.jpg%3Fauto%3Dcompress%2Cformat%26cs%3Dtinysrgb%26fm%3Dpjpg%26fit%3Dclip%26w%3D448%26dpr%3D2%26sharp%3D15&w=1080&q=75',
+    img: '/images/img_donations_6.jpeg',
     company: 'Penghubung Kebaikan',
     title: 'Berikan Haapan Hidup tuk Bayi di NICU',
     total_donations: 6600000,
@@ -1425,7 +1425,7 @@ export const DATA_RECOMEN_DONATIONS: RecomendDonations[] = [
   },
   {
     id: 7,
-    img: 'https://kitabisa.com/_next/image?url=https%3A%2F%2Fgudang-prod.imgix.net%2Fimages%2F1b7308bb-b0f3-11ee-9579-9e46e8a90241_97CD055AB5CD38D0.jpg%3Fauto%3Dcompress%2Cformat%26cs%3Dtinysrgb%26fm%3Dpjpg%26fit%3Dclip%26w%3D448%26dpr%3D2%26sharp%3D15&w=1080&q=75',
+    img: '/images/img_donations_7.jpeg',
     company: 'Penghubung Kebaikan',
     title: 'Selamatkan Pasien Thalasemia Berikan Harapan Hidup Lebih Panjang',
     total_donations: 3200000,
