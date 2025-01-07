@@ -2,9 +2,7 @@
 
 import Link from 'next/link'
 import React from 'react'
-import { Lacquer } from 'next/font/google' 
-import { Jost } from 'next/font/google' 
-import { Poppins } from 'next/font/google' 
+import { Poppins, Inter, Jost, Lacquer } from 'next/font/google' 
 import Login from './login'
 
 const lacquer = Lacquer({ 
@@ -17,6 +15,11 @@ const poppins = Poppins({
   weight: ['200', '400', '700']
 })
 
+const inter = Inter({
+  subsets: ['latin'],
+  weight: ['300', '400', '600', '700']
+})
+
 const Navbar = () => {
   return (
     <div className="navbar bg-neutral-200 sticky top-0 z-50">
@@ -25,7 +28,7 @@ const Navbar = () => {
           <div tabIndex={0} role="button" className="btn btn-ghost lg:hidden">
             <svg xmlns="http://www.w3.org/2000/svg" className="h-5 w-5" fill="none" viewBox="0 0 24 24" stroke="currentColor"><path strokeLinecap="round" strokeLinejoin="round" strokeWidth="2" d="M4 6h16M4 12h8m-8 6h16" /></svg>
           </div>
-          <ul tabIndex={0} className={`${poppins.className} menu menu-sm dropdown-content mt-3 z-[1] p-2 shadow bg-base-100 rounded-box w-52`}>
+          <ul tabIndex={0} className={`${poppins.className} font-bold menu menu-sm dropdown-content mt-3 z-[1] p-2 shadow bg-base-100 rounded-box w-52`}>
             <li><Link href="/">Beranda</Link></li>
             <li><Link href="/data_statistik">Data & Statistik</Link></li>
             <li><Link href="/solusi_pemerintah">Solusi Pemerintah</Link></li>

@@ -1,7 +1,6 @@
 import React from 'react'
 import Image from 'next/image'
-import { Jost } from 'next/font/google' 
-import { Poppins } from 'next/font/google' 
+import { Poppins, Inter, Jost } from 'next/font/google' 
 
 import sponsor1 from '../../../public/sponsor1.png'
 import sponsor2 from '../../../public/sponsor2.png'
@@ -13,6 +12,7 @@ import social3 from '../../../public/yt.svg'
 
 const poppins = Poppins({
   subsets: ['latin'],
+  display: 'swap',
   weight: ['200', '400', '700']
 })
 

@@ -56,7 +56,7 @@ export default function Home() {
           <div className='sm:grid grid-cols-3 gap-4'>
             {dataOtherNews.map((x) => {
               return (
-                <div key={x.id} className='mb-3 sm:m-0 cursor-pointer'>
+                <div key={x.id} className={`${inter.className} mb-3 sm:m-0 cursor-pointer`}>
                   <Link href={`/berita/1`}>
                     <div className='w-full rounded-lg h-[35vh] overflow-hidden mb-2'>
                       <Image className="w-full h-full object-cover ease-in-out duration-300 hover:scale-125" sizes="100vw" src={x.img} width={0} height={0} alt="Shoes" />
